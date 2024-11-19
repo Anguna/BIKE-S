@@ -16,6 +16,10 @@ h1{
     display: inline;
     padding: 0px 0px 0px 100px;
 }
+nav{
+    padding: 0px 50px;
+    text-align: right;
+}
 a.inicio{
     font-family: "Bokor", system-ui;
 }
