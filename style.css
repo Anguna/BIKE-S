@@ -5,6 +5,10 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    background-image: url(imagens/bikes.jpeg);
+    background-position: center center;
+}
 header{
     background-color: black;
 }
@@ -21,6 +25,7 @@ nav{
     text-align: right;
 }
 a.inicio{
+    padding: 0px 20px;
     font-family: "Bokor", system-ui;
 }
 a.inicio:hover {
