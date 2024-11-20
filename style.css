@@ -35,8 +35,16 @@ a.inicio:hover {
 img {
     width: 100px;
     height: 100px;
+    padding: 10px;
+}
+.direita{
+    float: right;
+}
+.esquerda{
+    float: left;
 }
 main{
+    text-align: center;
     box-shadow: 5px 5px 15px black;
     background-color: gray;
     margin: auto;
