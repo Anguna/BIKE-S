@@ -68,3 +68,9 @@ a{
     font-weight: bold;
     text-decoration: none;
 }
+span {
+    display: inline-block;
+}
+dl {
+    display: inline-block;
+}
