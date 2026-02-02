@@ -1,81 +1,122 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Poppins:wght@300;600&display=swap');
 
-*{
-    padding: 0px;
-    margin: 0px;
+:root {
+    --laranja: #ff6600;
+    --preto: #121212;
+    --cinza-transparente: rgba(30, 30, 30, 0.85);
 }
-body{
-    background-image: url(imagens/bikes.jpeg);
-    background-position: center center;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-header{
-    background-color: black;
-}
-h1{
-    font-size: 3em;
-    font-family: "Bokor", system-ui;
+
+body {
+    background: url('imagens/bikes.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
     color: white;
-    text-align: left;
-    display: inline;
-    padding: 0px 0px 0px 100px;
 }
-nav{
-    padding: 0px 50px;
-    text-align: right;
+
+header {
+    background-color: var(--preto);
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--laranja);
 }
-a.inicio{
-    padding: 0px 20px;
-    font-family: "Bokor", system-ui;
-}
-a.inicio:hover {
-    background-color: gray;
-    border-radius: 5px;
-    transition-duration: 0.5s;
-}
-img {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-}
-.direita{
-    float: right;
-}
-.esquerda{
-    float: left;
-}
-main{
-    text-align: center;
-    box-shadow: 5px 5px 15px black;
-    background-color: gray;
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
     margin: auto;
-    max-width: 800px;
-    min-width: 250px;
-    padding: 10px;
-}
-h2{
-    font-family:  "Bokor", system-ui;
-}
-p{
-    font-family: Arial, Helvetica, sans-serif;
-}
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-span {
-    display: inline-block;
-}
-dl {
-    display: inline-block;
 }
 
-.imagem{
-    border-radius: 50%;
+h1 {
+    font-size: 2.5em;
+    font-family: "Bokor", cursive;
+    color: var(--laranja);
 }
+
+nav a.inicio {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a.contato-btn {
+    background-color: var(--laranja);
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: black;
+}
+
+main {
+    background-color: var(--cinza-transparente);
+    backdrop-filter: blur(5px); /* Efeito de vidro */
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+}
+
+section {
+    display: flow-root; /* Corrige o problema do float */
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: "Bokor", cursive;
+    color: var(--laranja);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.imagem {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid var(--laranja);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.direita { float: right; margin-left: 20px; }
+.esquerda { float: left; margin-right: 20px; }
+
+footer {
+    background-color: var(--preto);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-top: 3px solid var(--laranja);
+}
+
+.contato-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.creditos {
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+.creditos a:hover { color: var(--laranja); }
